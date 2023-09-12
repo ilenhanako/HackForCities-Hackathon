@@ -25,3 +25,5 @@ The function takes as input:
 #### For each QAOA layer (p layers):
 - Problem unitary: Using RZZ and RXX gates, it encodes the problem we are trying to solve with QAOA.
 - Mixer unitary: Using single-qubit rotations (RX, RY, RZ), it changes the quantum state in a manner dictated by the angles beta and gamma.
+
+In essence, this code sets up a parameterized quantum circuit using the QAOA algorithm and then runs this circuit on an IBM quantum simulator. The results returned represent the probabilities of each quantum state after the QAOA algorithm has been executed, and the goal in a typical QAOA problem would be to use these results (along with classical optimization) to find an optimal or near-optimal solution to the problem represented by the input graph.
