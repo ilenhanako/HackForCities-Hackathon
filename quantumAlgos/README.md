@@ -27,3 +27,13 @@ The function takes as input:
 - Mixer unitary: Using single-qubit rotations (RX, RY, RZ), it changes the quantum state in a manner dictated by the angles beta and gamma.
 
 In essence, this code sets up a parameterized quantum circuit using the QAOA algorithm and then runs this circuit on an IBM quantum simulator. The results returned represent the probabilities of each quantum state after the QAOA algorithm has been executed, and the goal in a typical QAOA problem would be to use these results (along with classical optimization) to find an optimal or near-optimal solution to the problem represented by the input graph.
+
+## Minimize Overfitting on Real-time Data
+1. Quantum Data Splitting:
+Splitting your quantum data into training, validation, and test sets. Fine-tuning parameters (like angles in QAOA), you can optimize on the training set and validate on a separate quantum data validation set.
+
+2. Limit the Depth in QAOA: p 
+Increasing the depth (i.e., the number of layers) in QAOA can make the algorithm more expressive but might also increase the risk of overfitting, especially with noisy quantum hardware. Starting with a shallower circuit and then gradually increasing depth (while monitoring performance on validation data) can be a prudent strategy.
+
+3. Noise Mitigation:
+Overfitting in the quantum context can sometimes mean fitting to the noise of the quantum device rather than the underlying problem. Noise mitigation techniques, like zero noise extrapolation or error mitigation strategies, can help reduce the impact of device noise.
