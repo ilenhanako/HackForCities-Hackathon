@@ -10,3 +10,18 @@ Qiskit Runtime's error suppression techniques + error mitigation techniques
 This code will generate a QAOA quantum circuit based on the graph given (a triangle in this case). The depth of the QAOA circuit is specified by p.
 
 This circuit is then transpiled and executed on IBM's quantum simulator. In a real-world scenario, optimizing the values of beta and gamma is essential for QAOA's success, typically done using classical optimization algorithms. This example just uses random values for demonstration purposes.
+
+### QAOA Circuit Definition:
+
+The qaoa_circuit function is designed to create a quantum circuit implementing the QAOA algorithm.
+
+The function takes as input:
+
+- graph: which defines the problem (connections between qubits).
+- p: the number of QAOA layers.
+- beta and gamma: angles that parameterize the circuit.
+- The function starts with an initial state preparation where every qubit is put into a superposition using Hadamard gates.
+
+#### For each QAOA layer (p layers):
+- Problem unitary: Using RZZ and RXX gates, it encodes the problem we are trying to solve with QAOA.
+- Mixer unitary: Using single-qubit rotations (RX, RY, RZ), it changes the quantum state in a manner dictated by the angles beta and gamma.
