@@ -70,3 +70,21 @@ results = job.result()
 counts = results.get_counts()
 print(counts)
 plot_histogram(counts).show()
+
+'''
+#GROVER ALGORITHM
+# Built-in modules
+import math
+
+# Imports from Qiskit
+from qiskit import QuantumCircuit
+from qiskit.circuit.library import GroverOperator, MCMT, ZGate
+from qiskit.visualization import plot_distribution
+
+# Imports from Qiskit Runtime
+from qiskit_ibm_runtime import QiskitRuntimeService, Sampler
+
+service = QiskitRuntimeService()
+sim = service.get_backend("ibmq_qasm_simulator")
+backend = service.get_backend("ibm_brisbane")
+'''
