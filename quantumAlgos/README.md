@@ -1,4 +1,10 @@
 # QUANTUM ALGORITHM: 
+## Evaluate efficiency of quantum circuit:
+1. Number of quantum bits
+2. Depth
+3. Program execution speed (Runtime)
+4. Number of Instructions
+
 ## QISKIT
 ### Sampler
 This primitive takes circuits as input and returns a quasi-probability distribution over the measurement outcomes. This generalizes histograms from quantum circuits, allowing for mitigation of readout errors.
@@ -55,6 +61,14 @@ Qiskit Implementation: Grover's Algorithm using two qubits
 - Visualize the quantum circuit using the draw method
 
 ## Minimize Overfitting on Real-time Data
+With growing nqubits the dependency on the number of layers is getting weaker.
+
+It is shown for the MNIST data, how the training data's ACC depends on the number of layers; with the number of qubits in [2, 4, 8, 12].
+
+Training Accuracy of MNIST data as a function of nqubits:
+
+Training accuracy of MNIST data as a function of nlayers:
+
 1. Quantum Data Splitting:
 Splitting your quantum data into training, validation, and test sets. Fine-tuning parameters (like angles in QAOA), you can optimize on the training set and validate on a separate quantum data validation set.
 
