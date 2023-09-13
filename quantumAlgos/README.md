@@ -76,6 +76,9 @@ We applied this correction matrix to the original results of our Grover's algori
 5. Plotting: 
 Plotted the raw counts (unmitigated) and the mitigated counts side by side for comparison.
 
+This method specifically mitigates measurement errors. It won't correct for errors introduced during the computation itself (e.g., errors from imperfect gate operations).
+
+The method provides an approximation to the "true" results and is not a full error correction technique. It can help improve results but might not completely eliminate all errors.
 ## Minimize Overfitting on Real-time Data
 With growing nqubits the dependency on the number of layers is getting weaker.
 
