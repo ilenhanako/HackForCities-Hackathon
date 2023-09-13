@@ -66,8 +66,10 @@ With growing nqubits the dependency on the number of layers is getting weaker.
 It is shown for the MNIST data, how the training data's ACC depends on the number of layers; with the number of qubits in [2, 4, 8, 12].
 
 Training Accuracy of MNIST data as a function of nqubits:
+![no ofqubits](https://github.com/ilenhanako/HFC2023/assets/9971306/4c881aa0-b1e0-46a1-a57a-185a8f289129)
 
 Training accuracy of MNIST data as a function of nlayers:
+![no oflayers](https://github.com/ilenhanako/HFC2023/assets/9971306/576259f2-c54d-4122-b7b0-91c0854319b1)
 
 1. Quantum Data Splitting:
 Splitting your quantum data into training, validation, and test sets. Fine-tuning parameters (like angles in QAOA), you can optimize on the training set and validate on a separate quantum data validation set.
