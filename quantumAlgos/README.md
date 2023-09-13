@@ -60,6 +60,22 @@ Qiskit Implementation: Grover's Algorithm using two qubits
 5. Visualization:
 - Visualize the quantum circuit using the draw method
 
+## Error Mitigation
+1. Calibration Circuits Generation: 
+We generated a series of calibration circuits that prepare and measure all possible states for the qubits we're using.
+
+2. Execution of Calibration Circuits: 
+Executed these calibration circuits on the quantum device.
+
+3. Fitting Calibration Data: 
+We took the results of these calibration circuits and fit them to a matrix that describes the error of the device.
+
+4. Applying the Correction: 
+We applied this correction matrix to the original results of our Grover's algorithm circuit to get the mitigated counts.
+
+5. Plotting: 
+Plotted the raw counts (unmitigated) and the mitigated counts side by side for comparison.
+
 ## Minimize Overfitting on Real-time Data
 With growing nqubits the dependency on the number of layers is getting weaker.
 
