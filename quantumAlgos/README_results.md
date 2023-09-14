@@ -29,6 +29,8 @@ In this specific result, the states '000' and '001' appeared most frequently, so
 ### Comparison of Quality of data
 #### Changing depth, p
 p=3, run 1
+![ck15tamiel5ovfan8rr0_histogram](https://github.com/ilenhanako/HFC2023/assets/9971306/1ec220d0-2a1b-4933-8066-11eb06908420)
+
 - State '101' was measured 181 times.
 - State '011' was measured 124 times.
 - State '111' was measured 70 times.
@@ -39,6 +41,8 @@ p=3, run 1
 - State '001' was measured 39 times.
 
 p=1, run 1
+![ck161vkiifjafcth4jk0_histogram](https://github.com/ilenhanako/HFC2023/assets/9971306/40805a1f-baed-4483-8800-181652d6e7d9)
+
 ```
 {'010': 29, '110': 15, '100': 29, '001': 35, '101': 31, '111': 8, '000': 816, '011': 61}
 ```
