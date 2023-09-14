@@ -60,6 +60,19 @@ Qiskit Implementation: Grover's Algorithm using two qubits
 5. Visualization:
 - Visualize the quantum circuit using the draw method
 
+## How to measure number of qubits needed for Grover's Algorithm:
+The number of qubits required for Grover's algorithm is primarily determined by the problem's search space size. Here's how you can determine the number of qubits:
+
+1. Search Space Size
+Suppose you have an unsorted database or a function with N possible inputs. For Grover's algorithm to search through all possible inputs, you would need to represent each input in quantum form.
+
+2. Binary Representation
+Typically, we represent these inputs in binary. The number of bits (or qubits, in the quantum case) required to represent N items is n, where N=2^n
+
+3. Calculation 
+To determine n (the number of qubits), you can take the logarithm (base 2) of N. For example:
+!
+
 ## Error Mitigation
 1. Calibration Circuits Generation: 
 We generated a series of calibration circuits that prepare and measure all possible states for the qubits we're using.
@@ -79,6 +92,10 @@ Plotted the raw counts (unmitigated) and the mitigated counts side by side for c
 This method specifically mitigates measurement errors. It won't correct for errors introduced during the computation itself (e.g., errors from imperfect gate operations).
 
 The method provides an approximation to the "true" results and is not a full error correction technique. It can help improve results but might not completely eliminate all errors.
+
+## Concerns over Dataset lost etc after each algorithmm
+No, Grover's algorithm will not change the original datasets. Quantum algorithms, including Grover's and QAOA, are executed on quantum data (qubits), and they don't modify classical input data in place.
+
 ## Minimize Overfitting on Real-time Data
 With growing nqubits the dependency on the number of layers is getting weaker.
 

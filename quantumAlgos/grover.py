@@ -44,8 +44,8 @@ constructs a quantum circuit for Grover's algorithm by initializing a superposit
 '''
 # create quantum register, 'qr', with 2 qubits
 # create classical register, 'cr', with 2 bits. Classical register used to store results after measurement of quantum register
-qr = QuantumRegister(2)
-cr = ClassicalRegister(2)
+qr = QuantumRegister(1)
+cr = ClassicalRegister(1)
 
 # Hadamard gate ('h') applied to both qubits in quantum register
 # Hadamard gate creates superposition of both qubits, |0⟩ and |1⟩

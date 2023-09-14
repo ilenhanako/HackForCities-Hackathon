@@ -51,6 +51,8 @@ p=1, run 1
 - State '010' was measured 29 times.
 - State '001' was measured 35 times.
 
+p=4, run 1
+{'010': 109, '001': 379, '101': 269, '110': 18, '100': 85, '111': 6, '000': 129, '011': 29}
 ## Grover's Algorithm
 With the same logic above, we have 2 qubits instead of 3 qubits. Therefore, there are 2^2 = 4 possible states.
 ![ck0njdvp8blo0kiq4spg_histogram](https://github.com/ilenhanako/HFC2023/assets/9971306/bce87b10-9b22-472e-928b-02bbc4d68c0a)
