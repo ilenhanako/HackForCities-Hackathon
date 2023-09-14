@@ -44,7 +44,7 @@ graph = [
     [0, 1]
 ]
 
-p = 2
+p = 1  # Depth of the circuit
 beta = np.random.uniform(0, np.pi, p)
 gamma = np.random.uniform(0, np.pi, p)
 

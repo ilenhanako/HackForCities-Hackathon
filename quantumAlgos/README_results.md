@@ -26,6 +26,31 @@ The measurement results you see are potential solutions to the optimization prob
 
 In this specific result, the states '000' and '001' appeared most frequently, so they might be the best or near-best solutions to the optimization problem tackled by the QAOA instance. 
 
+### Comparison of Quality of data
+#### Changing depth, p
+p=3, run 1
+- State '101' was measured 181 times.
+- State '011' was measured 124 times.
+- State '111' was measured 70 times.
+- State '000' was measured 270 times.
+- State '100' was measured 20 times.
+- State '110' was measured 156 times.
+- State '010' was measured 164 times.
+- State '001' was measured 39 times.
+
+p=1, run 1
+```
+{'010': 29, '110': 15, '100': 29, '001': 35, '101': 31, '111': 8, '000': 816, '011': 61}
+```
+- State '101' was measured 31 times.
+- State '011' was measured 61 times.
+- State '111' was measured 8 times.
+- State '000' was measured 816 times.
+- State '100' was measured 29 times.
+- State '110' was measured 15 times.
+- State '010' was measured 29 times.
+- State '001' was measured 35 times.
+
 ## Grover's Algorithm
 With the same logic above, we have 2 qubits instead of 3 qubits. Therefore, there are 2^2 = 4 possible states.
 ![ck0njdvp8blo0kiq4spg_histogram](https://github.com/ilenhanako/HFC2023/assets/9971306/bce87b10-9b22-472e-928b-02bbc4d68c0a)
