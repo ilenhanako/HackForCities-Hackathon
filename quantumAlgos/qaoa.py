@@ -52,13 +52,14 @@ qc = qaoa_circuit(graph, p, beta, gamma)
 qc.measure_all()
 
 # Visualize the circuit
-qc.draw(output="mpl")
+figure = qc.draw(output="mpl")
+figure.savefig("qaoa_complete_circuit.png")
 
 # Transpile and run on a quantum processor
 provider = IBMQ.get_provider(hub='ibm-q')
 backend = provider.get_backend('ibmq_qasm_simulator')  # Using the simulator for demonstration
 
-t_qc = transpile(qc, backend=backend)
+t_qc = transpile(qc, backend=backend, optimization_level=3)  # Use the highest optimization level
 qobj = assemble(t_qc)
 job = backend.run(qobj)
 

@@ -16,7 +16,7 @@ def phase_oracle(circuit, register):
     circuit.cz(register[0], register[1])
     # function applies the controlled-Z (CZ) gate on the quantum register.
     # The CZ gate flips the sign (phase) of the state of the target qubit if the control qubit is in the state |1⟩.
-qr = QuantumRegister(2)
+qr = QuantumRegister(4)
 # creates a new quantum register named 'qr' with 2 qubits
 oracleCircuit = QuantumCircuit(qr)
 phase_oracle(oracleCircuit, qr)
@@ -44,8 +44,8 @@ constructs a quantum circuit for Grover's algorithm by initializing a superposit
 '''
 # create quantum register, 'qr', with 2 qubits
 # create classical register, 'cr', with 2 bits. Classical register used to store results after measurement of quantum register
-qr = QuantumRegister(1)
-cr = ClassicalRegister(1)
+qr = QuantumRegister(4)
+cr = ClassicalRegister(4)
 
 # Hadamard gate ('h') applied to both qubits in quantum register
 # Hadamard gate creates superposition of both qubits, |0⟩ and |1⟩
