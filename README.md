@@ -1,6 +1,10 @@
 # Hack for Cities 2023
 QubitForce, for a "Quantum-centric Supercomputing for Smart Cities" competition
 
+## Meet the Team:
+
+<img width="692" alt="Screenshot 2023-09-15 at 4 08 24 PM" src="https://github.com/ilenhanako/HFC2023/assets/9971306/f4ca1535-5784-4630-9451-f47ec198afc6">
+
 ## Table of Contents:
 1. dataProcessing1
 - code for feature engineering of our inputs
