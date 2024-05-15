@@ -28,7 +28,7 @@ QubitForce, for a "Quantum-centric Supercomputing for Smart Cities" competition
 
 5. README_quantumalgos.md
 
-## WHY QUANTUM????
+## WHY QUANTUM? brain-dump section
 
 1. Hybrid Quantum-Classical Ensembles:
 Combining predictions from both quantum and classical algorithms could be beneficial. For example, certain problems might be solved more accurately with quantum algorithms, while others are more suited for classical algorithms.
