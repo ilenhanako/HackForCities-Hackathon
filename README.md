@@ -12,6 +12,16 @@ QubitForce, for a "Quantum-centric Supercomputing for Smart Cities" competition
 
 <img width="692" alt="Screenshot 2023-09-15 at 4 08 24 PM" src="https://github.com/ilenhanako/HFC2023/assets/9971306/f4ca1535-5784-4630-9451-f47ec198afc6">
 
+## Project Overview
+QubitForce tackles the critical challenge of traffic congestion in smart cities. Our project leverages the power of quantum computing to address issues like inflexible lane configurations and under-optimized road infrastructure, revolutionizing urban traffic management.
+
+### Challenges:
+Inflexible Lane Configurations: Traditional traffic systems lack the flexibility to adapt to varying traffic conditions.
+Under-Optimized Road Infrastructure: Existing infrastructure often fails to maximize efficiency, leading to increased congestion.
+
+**Our Quantum Approach:**
+QubitForce introduces an innovative approach to manage urban traffic congestion. Our solution harnesses the power of quantum computing, integrating sophisticated algorithms like Grover’s Search, QAOA, and Quantum Walk. This framework enables dynamic analysis and optimization of traffic flow, addressing challenges like inflexible lane configurations and under-optimized road infrastructure. By parallelizing these quantum algorithms and incorporating classical machine learning, we offer real-time, scalable solutions for urban traffic management. Our hybrid quantum-classical ensemble ensures efficient data processing, optimal lane usage, and dynamic traffic control strategies, paving the way for smarter, congestion-free cities.
+
 ## Table of Contents:
 1. dataProcessing1
 - code for feature engineering of our inputs
@@ -20,35 +30,26 @@ QubitForce, for a "Quantum-centric Supercomputing for Smart Cities" competition
 
 2. QuantumAlgos
 - errorM.py , Error mitigation techniques code for Grover
-- grover.py , code for grover combined with errorM.pu
-- qaoa.py , code for qaoa
+- grover.py , Code for grover combined with errorM.pu
+- qaoa.py , Code for qaoa
 
 3. qiskitsample.py
-- initialization and implementation of qiskit
+- Initialization and implementation of qiskit
 
 4. README_results.md
 - Analyzing results of our algorithm with IBMQ
 
 5. README_quantumalgos.md
 
-## WHY QUANTUM? brain-dump section
+## Why did we choose Quantum Computing?
 
-1. Hybrid Quantum-Classical Ensembles:
-Combining predictions from both quantum and classical algorithms could be beneficial. For example, certain problems might be solved more accurately with quantum algorithms, while others are more suited for classical algorithms.
-This could involve running both a quantum algorithm and a classical algorithm on a given problem and then combining their outputs using a classical ensemble method, like voting or stacking.
+1. Hybrid Quantum-Classical Ensembles: This approach effectively tackles the dynamic nature of urban traffic. Quantum algorithms can rapidly process complex scenarios like variable traffic patterns, while classical algorithms can handle more predictable aspects, leading to a comprehensive traffic management system.
 
+2. Quantum Error Mitigation: In the context of traffic management, this means more reliable predictions and optimization strategies in real-time, crucial for managing unpredictable traffic flows.
 
-2. Quantum Error Mitigation:
-Noise and errors are significant issues in current quantum computers. While not an ensemble method in the traditional sense, techniques like Quantum Error Mitigation aim to correct the output of quantum algorithms by running them multiple times with slight variations, similar in spirit to bootstrapping in classical ensembles.
+3. Diverse Quantum Algorithms: Different quantum algorithms can be employed to address various facets of the traffic problem – from optimizing traffic flow at intersections to adjusting lane configurations – providing a multi-faceted solution.
 
-
-3. Diverse Quantum Algorithms:
-One could run multiple quantum algorithms (or the same algorithm with different parameters or initializations) for a particular problem and combine their results, aiming to capture the strengths of each.
-
-
-4. Parameter Ensembles:
-Quantum algorithms often involve variational circuits with tunable parameters. Running the algorithm with different parameter initializations and aggregating the results could boost performance.
-
+4. Parameter Ensembles in Quantum Algorithms: By running these algorithms with varied parameters, the solution can adapt to different traffic conditions, ensuring optimal traffic management under various scenarios.
 
 
 Stacking (Stacked Generalization):
